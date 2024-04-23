@@ -1,0 +1,100 @@
+/* #region Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-active: #0282f9;
+
+}
+
+.container {
+    width: 80%;
+    max-width: 1176px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+    padding: 1rem;
+}
+
+.col-6 {
+    width: 50%;
+    padding: 1rem;
+}
+
+/* #endregion Common */
+
+/* #region Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+
+    & .logo {
+        max-width: 100%;
+    }
+
+    & nav {
+
+        & a {
+            color: black;
+            padding: 0.5rem;
+            text-decoration: none;
+
+            &.active {
+                text-decoration: underline;
+                text-decoration-color: var(--text-active);
+                color: var(--text-active);
+            }
+
+        }
+    }
+}
+
+
+/* #endregion Header */
+
+
+/* #region Jumbotron */
+.jumbotron {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+
+    & .imgCurrentSeries {
+        width: 100%;
+        height: 630px;
+
+    }
+
+}
+
+/* #endregion Jumbotron */
+
+/* #region Main */
+main {
+    background-color: black;
+
+}
+
+/* #endregion Main */
+
+/* #region Footer */
+footer {
+    background-color: green;
+}
+
+/* #endregion Footer */
