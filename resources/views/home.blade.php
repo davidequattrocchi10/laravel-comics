@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             @foreach ($comics as $comic)
-            <div class="col-4">
+            <div class="col-12 col-6 col-4 col-3 col-2">
                 <div class="card">
                     <div class="card-title">
                         <h3> Title: {{$comic['title']}}</h3>
